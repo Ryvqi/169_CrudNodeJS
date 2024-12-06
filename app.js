@@ -13,6 +13,9 @@ const session = require('express-session');
 const authRoutes = require('./routes/authroutes.js');
 const { isAuthenticated } = require('./Middlewares/middleware.js');
 
+const path = require('path');
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.urlencoded({ extended: true }));
 
 // Konfigurasi express-session
@@ -55,3 +58,5 @@ app.use((req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
+
+console.log('Views Directory:', app.get('views'));

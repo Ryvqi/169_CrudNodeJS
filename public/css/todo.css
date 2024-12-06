@@ -1,0 +1,80 @@
+/* Styling untuk card dengan hover effect */
+.todo-card {
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover pada card (zoom-in) */
+.todo-card:hover {
+    transform: scale(1.05);
+}
+
+/* Styling untuk task yang sudah selesai */
+.completed {
+    text-decoration: line-through;
+}
+
+/* Menambahkan margin pada container utama */
+.container {
+    max-width: 800px;
+    
+}
+
+/* Styling untuk tombol Edit dan Delete */
+.card-body .btn {
+    margin-right: 10px;
+}
+
+/* Memberikan padding pada card dan shadow */
+.card {
+    border-radius: 10px;
+}
+
+/* Gaya form input */
+.input-group {
+    width: 100%;
+    justify-content: center;
+}
+
+
+.input-group .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Add Task */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Modal styling */
+.modal-body .form-group {
+    margin-bottom: 1rem;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
+    padding: 5px 0; /* Menambahkan padding pada atas dan bawah */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Garis pemisah di atas footer */
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d; /* Warna teks abu-abu */
+    font-size: 14px;
+}
