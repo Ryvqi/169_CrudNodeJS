@@ -1,0 +1,165 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Soft gray */
+  color: #212529; /* Bootstrap text color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff; /* Primary color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-text {
+  color: #f8f9fa;
+  font-style: italic;
+}
+
+/* Index Page */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a.btn-primary {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Form Styling (Contact, Login, Signup) */
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Todo Page */
+#todoList .list-group-item {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 10px;
+}
+
+#todoList .list-group-item .completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.editBtn,
+.deleteBtn {
+  margin-right: 5px;
+}
+
+.editBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #218838;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+}
+
+/* Modal Styling */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button.btn-close {
+  background: transparent;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    margin: 10px 0;
+  }
+}
